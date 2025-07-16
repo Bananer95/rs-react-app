@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write .",
+    "format:fix": "prettier --write . && eslint . --fix",
     "prepare": "husky && chmod ug+x .husky/*"
   },
   "dependencies": {
