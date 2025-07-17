@@ -40,7 +40,7 @@ export default class MainPage extends Component {
         this.setState({
           resault: Array.isArray(data) ? data : [data],
         });
-        localStorage.setItem('searchQuery', query);
+        localStorage.setItem('searchQuery', query.trim());
       } else {
         const response = await fetch(`${apiUrl}?limit=50`);
         if (!response.ok) throw new Error('Fetch failed');
