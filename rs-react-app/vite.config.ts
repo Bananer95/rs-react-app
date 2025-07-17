@@ -16,15 +16,14 @@ export default defineConfig({
         'src/**/*.spec.{js,jsx,ts,tsx}',
         'src/index.{js,jsx,ts,tsx}',
         'src/setupTests.{js,ts}',
-        'src/**/*.d.ts'
+        'src/**/*.d.ts',
       ],
       thresholds: {
         lines: 50,
         functions: 50,
         branches: 80,
-        statements: 50
-      }
-
+        statements: 50,
+      },
     },
   },
 });

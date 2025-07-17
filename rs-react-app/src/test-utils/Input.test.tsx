@@ -5,14 +5,13 @@ import { it, expect } from 'vitest';
 import '@testing-library/jest-dom';
 
 it('renders MainPage', async () => {
-    render(<Input />);
-    
-    const inputElemnt = screen.getByRole('textbox');
-    
-    expect(inputElemnt).toHaveValue("");
+  render(<Input />);
 
-    await userEvent.type(inputElemnt, 'pikachu');
+  const inputElemnt = screen.getByRole('textbox');
 
-    expect(inputElemnt).toHaveValue('pikachu');
-})
+  expect(inputElemnt).toHaveValue('');
 
+  await userEvent.type(inputElemnt, 'pikachu');
+
+  expect(inputElemnt).toHaveValue('pikachu');
+});
