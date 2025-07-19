@@ -13,7 +13,7 @@
     "format:fix": "prettier --write . && eslint . --fix",
     "prepare": "husky",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/Bananer95/rs-react-app.git -u 'Andrei <Bananer95@mail.ru>'"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
